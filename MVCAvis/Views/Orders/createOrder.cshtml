@@ -1,0 +1,132 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        .containerClass {
+            float: left;
+            width: 50%;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>showOffer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <h1 style="color:red;"> Avis Biludlejning</h1>
+            <h3>Opret Ordre</h3>
+
+            <form method="post">
+                <div class="containerClass">
+                    Vælg Bilkategori:
+                    <br />
+                    <select name="cat">
+                        <option value="A">Lille bil(A)</option>
+                        <option value="B">Mellem bil(B)</option>
+                        <option value="C">Stor bil(C)</option>
+                        <option value="I">Automatgear(I)</option>
+                        <option value="O">Varevogn(O)</option>
+                    </select>
+                    <br />
+                    <br />
+                    Vælg Startdestination:
+                    <br />
+                    <select name="destination">
+                        <option value="KBH">København</option>
+                        <option value="ARH">Århus</option>
+                        <option value="OE1">Odense</option>
+                        <option value="SLA">Slagelse</option>
+                        <option value="NY3">Nykøbing Falster</option>
+                        <option value="EBJ">Esbjerg</option>
+                    </select>
+                    <br />
+                    <br />
+                    Vælg Slutdestination:
+                    <br />
+                    <select name="Slutdestination">
+                        <option value="KBH">København</option>
+                        <option value="ARH">Århus</option>
+                        <option value="OE1">Odense</option>
+                        <option value="SLA">Slagelse</option>
+                        <option value="NY3">Nykøbing Falster</option>
+                        <option value="EBJ">Esbjerg</option>
+                    </select>
+                    <br />
+                    <br />
+                    Vælg start og slut dato for lejemålet:
+                    <br />
+                    <input type="date" name="datostart"> -
+                    <input type="date" name="datoslut">
+                    <br />
+                    <br />
+                    Vælg forsikring
+                    <br />
+                    <select name="Insurance">
+                        <option value="1500">Forsikringstype 1</option>
+                        <option value="800">Forsikringstype 2</option>
+                        <option value="1200">Forsikringstype 3</option>
+                        <option value="900">Forsikringstype 4</option>
+                        <option value="0">Ingen forsikring</option>
+                    </select>
+                    <br />
+                    <br />
+
+                    <h3>Personinfo</h3>
+
+                    Fornavn:
+                    <br>
+                    <input type="text" name="firstname" id="firstname" placeholder="Fornavn">
+                    <br>
+                    Efternavn:
+                    <br>
+                    <input type="text" name="lastname" id="lastname" placeholder="Efternavn">
+                    <br>
+                    Address:
+                    <br>
+                    <input type="text" name="address" id="address" placeholder="Adresse">
+                    <br>
+                    Postnummer og by:
+                    <br>
+                    <input type="text" name="postal" id="postalcode" placeholder="Postnummer">
+                    <input type="text" name="city" id="city" placeholder="By">
+                    <br>
+                    E-mail:
+                    <br>
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                    <br>
+                    Telefonnummer:
+                    <br>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="Telefonnummer">
+                    <br>
+                </div>
+                <br>
+                <div class="containerClass">
+                    <fieldset>
+                        <legend>Tilbuddet</legend>
+                        <p><b>Startdestination: </b>@ViewData["desti"] </p>
+                        <p><b>Slutdestination: </b>@ViewData["Slutdestination"]</p>
+                        <p><b>Startdato: </b>@ViewData["datostart"]</p>
+                        <p><b>Slutdato: </b>@ViewData["datoslut"]</p>
+                        <p><b>Total dage: </b>@ViewData["dage"]</p>
+                        <p><b>Forsikringsomkostninger: </b>@ViewData["forsikring"]</p>
+                        <p><b>Total Pris: </b>@ViewData["pris"]</p>
+                    </fieldset>
+                </div>
+                <input type="submit" name="confirm" id="confirmBTN" value="Calculate prize" />
+                <input type="submit" name="confirm" id="confirmBTN" value="Create order" />
+                <input type="reset" name="confirm" id="resetBTN" value="Reset" />
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
