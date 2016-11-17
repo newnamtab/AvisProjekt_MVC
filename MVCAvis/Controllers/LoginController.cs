@@ -43,7 +43,7 @@ namespace MVCAvis.Controllers
                 }
                 else
                 {
-                    Response.Write("Code error 69 - Du grim, hilsen Søren");
+                    Response.Write("Code error 42");
                 }
             }
             else
