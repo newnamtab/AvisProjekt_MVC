@@ -27,6 +27,9 @@
                     Bilkategori:
                     <br />
                     <select name="cat">
+                        @{ 
+                        <option value="">Lille bil(A)</option>
+                        }
                         <option value="A">Lille bil(A)</option>
                         <option value="B">Mellem bil(B)</option>
                         <option value="C">Stor bil(C)</option>
@@ -81,28 +84,28 @@
 
                     Fornavn:
                     <br>
-                    <input type="text" name="firstname" id="firstname" placeholder="Fornavn">
+                    <input type="text" name="firstname" id="firstname" value="@Model.Customer.FirstName">
                     <br>
                     Efternavn:
                     <br>
-                    <input type="text" name="lastname" id="lastname" placeholder="Efternavn">
+                    <input type="text" name="lastname" id="lastname" value="@Model.Customer.LastName">
                     <br>
                     Address:
                     <br>
-                    <input type="text" name="address" id="address" placeholder="Adresse">
+                    <input type="text" name="address" id="address" value="@Model.Customer.Street">
                     <br>
                     Postnummer og by:
                     <br>
-                    <input type="text" name="postal" id="postalcode" placeholder="Postnummer">
-                    <input type="text" name="city" id="city" placeholder="By">
+                    <input type="text" name="postal" id="postalcode" value="@Model.Customer.PostalCode">
+                    <input type="text" name="city" id="city" value="@Model.Customer.City">
                     <br>
                     E-mail:
                     <br>
-                    <input type="text" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name="email" id="email" value="@Model.Customer.Email">
                     <br>
                     Telefonnummer:
                     <br>
-                    <input type="text" name="phonenumber" id="phonenumber" placeholder="Telefonnummer">
+                    <input type="text" name="phonenumber" id="phonenumber" value="@Model.Customer.TelephoneNumber">
                     <br>
                 </div>
                 <br>
