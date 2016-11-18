@@ -21,5 +21,6 @@ namespace MVCAvis.Models
         public int phonenumber { get; set; }
         public double totalPrize { get; set; } = 0;
         private double dailyPrize { get; set; } = 0;
+        
     }
 }
