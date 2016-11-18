@@ -397,7 +397,7 @@ namespace WCF_AVIS.DB
             List<Reservation> returnlist = new List<Reservation>();
 
             // Hvis der er et reservationsnummer, så søg på det først.
-            if (res.Reservationsnummer != "")
+            if (res.Reservationsnummer != "" && res.Reservationsnummer != null)
             {
                 Reservation numres = searchReservation(res.Reservationsnummer);
                 if (numres != null)

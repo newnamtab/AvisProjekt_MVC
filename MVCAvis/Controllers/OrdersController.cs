@@ -163,7 +163,21 @@ namespace MVCAvis.Controllers
         [HttpGet]
         public ActionResult editOrder(string reservationnumber)
         {
-            Reservation res = Refe.SearchReservation(reservationnumber);
+            Reservation res = new Reservation();
+            res.BilCat = "A";
+            res.Customer = new Customer();
+            res.StartStation = new RentalStation();
+            res.EndStation = new RentalStation();
+            res.StartDate = DateTime.Now;
+            res.EndDate = DateTime.Now + new TimeSpan (2,0,0,0);
+            res.TotalPrize = 0;
+
+
+            if (reservationnumber != "" && reservationnumber != null)
+            {
+                res = Refe.SearchReservation(reservationnumber);
+            }
+        
             return View(res);
         }
 

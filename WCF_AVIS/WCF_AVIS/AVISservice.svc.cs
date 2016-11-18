@@ -39,8 +39,16 @@ namespace WCF_AVIS
 
         public Reservation SearchReservation(string searchVariable)
         {
-            //Søg i (falsk)database og returner det man finder
-            return new Reservation("ford focus", "Odense", DateTime.Today, DateTime.Today);
+            Reservation res = new Reservation();
+            foreach (Reservation reservation in DB.GetReservations())
+            {
+                if (searchVariable == reservation.Reservationsnummer)
+                {
+                    res = reservation;
+                }
+            }
+
+            return res;
         }
 
         public List<Reservation> Search(Reservation searchVariable)
