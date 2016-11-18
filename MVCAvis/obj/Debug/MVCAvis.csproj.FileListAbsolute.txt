@@ -97,3 +97,6 @@ C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\MVCAvis\bin\System.Web.Mvc.xml
 C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\MVCAvis\obj\Debug\MVCAvis.csprojResolveAssemblyReference.cache
 C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\MVCAvis\obj\Debug\MVCAvis.dll
 C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\MVCAvis\obj\Debug\MVCAvis.pdb
+C:\Users\Mathias\Desktop\tryyy\MVCAvis\obj\Debug\MVCAvis.csprojResolveAssemblyReference.cache
+C:\Users\Mathias\Desktop\tryyy\MVCAvis\obj\Debug\MVCAvis.dll
+C:\Users\Mathias\Desktop\tryyy\MVCAvis\obj\Debug\MVCAvis.pdb

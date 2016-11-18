@@ -16,3 +16,6 @@ C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\WCF_AVIS\WCF_AVIS\bin\WCF_AVIS.pdb
 C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\WCF_AVIS\WCF_AVIS\obj\Debug\WCF_AVIS.csprojResolveAssemblyReference.cache
 C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\WCF_AVIS\WCF_AVIS\obj\Debug\WCF_AVIS.dll
 C:\Users\ThomasCrone\Documents\Skole\Avis_MVC\WCF_AVIS\WCF_AVIS\obj\Debug\WCF_AVIS.pdb
+C:\Users\Mathias\Desktop\tryyy\WCF_AVIS\WCF_AVIS\obj\Debug\WCF_AVIS.csprojResolveAssemblyReference.cache
+C:\Users\Mathias\Desktop\tryyy\WCF_AVIS\WCF_AVIS\obj\Debug\WCF_AVIS.dll
+C:\Users\Mathias\Desktop\tryyy\WCF_AVIS\WCF_AVIS\obj\Debug\WCF_AVIS.pdb
