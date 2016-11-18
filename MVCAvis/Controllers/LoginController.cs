@@ -41,7 +41,7 @@ namespace MVCAvis.Controllers
                 }
                 else
                 {
-                    Response.Write("Code error 42"); //Ændring så jeg kan sync
+                    Response.Write("Code error 42"); //Ændring
                 }
             }
             else
