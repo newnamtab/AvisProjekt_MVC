@@ -29,21 +29,19 @@ namespace MVCAvis.Controllers
                     switch (Refe.validateAcess(user))
                     {
                         case 0:
-                            Response.Write("You have no power here");
+                            Response.Write("You have no power here!!");
                             break;
                         case 69:
                             return RedirectToAction("createOrder", "Orders"); //redirect hen til den pågældende side
-                            break;
                         case 11:
                             return RedirectToAction("searchOrder", "Orders"); //redirect hen til den pågældende side
-                            break;
                         default:
                             break;
                     }
                 }
                 else
                 {
-                    Response.Write("Code error 42");
+                    Response.Write("Login failed. Please try again.");
                 }
             }
             else
