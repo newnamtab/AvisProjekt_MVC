@@ -27,9 +27,7 @@
                     Bilkategori:
                     <br />
                     <select name="cat">
-                        @{ 
-                        <option value="">Lille bil(A)</option>
-                        }
+                        <option value="@Model.BilCat"> Nuværende valg: (@Model.BilCat)</option>
                         <option value="A">Lille bil(A)</option>
                         <option value="B">Mellem bil(B)</option>
                         <option value="C">Stor bil(C)</option>
@@ -41,6 +39,7 @@
                     Startdestination:
                     <br />
                     <select name="destination">
+                        <option value="@Model.StartStation.StationCode">Nuværende valg: (@Model.StartStation.StationCode)</option>
                         <option value="KBH">København</option>
                         <option value="ARH">Århus</option>
                         <option value="OE1">Odense</option>
@@ -53,6 +52,7 @@
                     Slutdestination:
                     <br />
                     <select name="Slutdestination">
+                        <option value="@Model.EndStation.StationCode">Nuværende valg: (@Model.EndStation.StationCode)</option>
                         <option value="KBH">København</option>
                         <option value="ARH">Århus</option>
                         <option value="OE1">Odense</option>
@@ -64,8 +64,8 @@
                     <br />
                     Start og slut dato for lejemålet:
                     <br />
-                    <input type="date" name="datostart"> -
-                    <input type="date" name="datoslut">
+                    <input type="date" name="datostart" value="@Model.StartDate.ToString("dd/mm/yyyy HH:MM")"/> -
+                    <input type="date" name="datoslut" value="@Model.EndDate.ToString("dd/mm/yyyy HH:MM")"/>
                     <br />
                     <br />
                     Forsikring
