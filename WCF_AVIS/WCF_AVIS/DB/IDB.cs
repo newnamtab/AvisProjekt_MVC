@@ -14,7 +14,7 @@ namespace WCF_AVIS
         RentalStation MatchStation(string stationcode);
         bool Login(string user, string password);
         int loginAccess(string user);
-        string TestMeetode();
+        string TestMeetode(); //Howdy
     }
     
 }

@@ -13,11 +13,11 @@ namespace MVCAvis
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Orders",
-                url: "{controller}/{action}/{reservationnumber}",
-                defaults: new { controller = "Orders", reservationnumber = UrlParameter.Optional }
-            );
+            //routes.MapRoute(
+            //    name: "Orders",
+            //    url: "{controller}/{action}/{reservationnumber}",
+            //    defaults: new { controller = "Orders", reservationnumber = UrlParameter.Optional }
+            //);
 
 
             routes.MapRoute(
