@@ -154,11 +154,11 @@ namespace MVCAvis.Controllers
             return View(resList);
         }
 
-        [HttpGet]
-        public ActionResult editOrder()
-        {
-            return View();
-        }
+        //[HttpGet]
+        //public ActionResult editOrder()
+        //{
+        //    return View();
+        //}
 
         [HttpGet]
         public ActionResult editOrder(string reservationnumber)
