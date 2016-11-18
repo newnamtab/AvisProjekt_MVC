@@ -154,16 +154,16 @@ namespace MVCAvis.Controllers
             return View(resList);
         }
 
-        [HttpGet]
-        public ActionResult editOrder()
-        {
-            return View();
-        }
+        //[HttpGet]
+        //public ActionResult editOrder()
+        //{
+        //    return View();
+        //}
 
         [HttpGet]
-        public ActionResult editOrder(string id)
+        public ActionResult editOrder(string reservationnumber)
         {
-            Reservation res = Refe.SearchReservation(id);
+            Reservation res = Refe.SearchReservation(reservationnumber);
             return View(res);
         }
 
