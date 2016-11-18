@@ -528,7 +528,7 @@ namespace WCF_AVIS.DB
             return 0;
         }
 
-        public string TestMeeetode()
+        public string TestMeetode()
         {
             return "Jesus loves you";
         }
