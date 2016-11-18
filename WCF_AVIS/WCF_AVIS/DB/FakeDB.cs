@@ -530,7 +530,7 @@ namespace WCF_AVIS.DB
 
         public string TestMeetode()
         {
-            return "Jesus loves you";
+            return "Jesus loves you";//and he knows
         }
     }
 }
