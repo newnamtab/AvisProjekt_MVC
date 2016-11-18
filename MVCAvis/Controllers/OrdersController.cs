@@ -161,9 +161,9 @@ namespace MVCAvis.Controllers
         }
 
         [HttpGet]
-        public ActionResult editOrder(string reservationnumber)
+        public ActionResult editOrder(string id)
         {
-            Reservation res = Refe.SearchReservation(reservationnumber);
+            Reservation res = Refe.SearchReservation(id);
             return View(res);
         }
 
