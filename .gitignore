@@ -6,6 +6,7 @@
 *.user
 *.sln.docstates
 *.cache
+MVCAvis.csproj.FileListAbsolute.txt
 
 # Build results
 
