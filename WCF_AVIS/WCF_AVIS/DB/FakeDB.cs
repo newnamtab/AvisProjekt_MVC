@@ -528,6 +528,11 @@ namespace WCF_AVIS.DB
             return 0;
         }
 
+        public string TestMetode()
+        {
+            return "Jesus loves you";
+        }
+
         
     }
 }
