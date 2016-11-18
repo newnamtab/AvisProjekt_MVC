@@ -41,7 +41,7 @@ namespace MVCAvis.Controllers
                 }
                 else
                 {
-                    Response.Write("Login failed. Please try again.");
+                    Response.Write("Code error 42");
                 }
             }
             else
