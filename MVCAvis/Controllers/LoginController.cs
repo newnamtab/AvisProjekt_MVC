@@ -29,7 +29,7 @@ namespace MVCAvis.Controllers
                     switch (Refe.validateAcess(user))
                     {
                         case 0:
-                            Response.Write("You have no power here");
+                            Response.Write("You have no power here!!");
                             break;
                         case 69:
                             return RedirectToAction("createOrder", "Orders"); //redirect hen til den pågældende side
