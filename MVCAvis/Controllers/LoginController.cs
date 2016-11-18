@@ -41,7 +41,7 @@ namespace MVCAvis.Controllers
                 }
                 else
                 {
-                    Response.Write("Code error 42");
+                    Response.Write("Code error 42"); // ja hej
                 }
             }
             else
